@@ -3,27 +3,24 @@ set -e
 cd "$(dirname "$0")/.."
 
 # Remove cache for safety
-rm -rf output .spago .cache ../gopurs-*/output ../gopurs-*/.spago ../gopurs-*/.cache
+rm -rf output .spago .cache ../phpurs-*/output ../phpurs-*/.spago ../phpurs-*/.cache
 
 rm -f spago.yaml
-ln -s spago.go.yaml spago.yaml
+ln -s spago.php.yaml spago.yaml
 
 echo "=== Building project with spago ==="
 spago build || { echo "Spago build failed"; exit 1; }
 
-echo "=== Generating Go code with gopurs ==="
-node ../gopurs/bin/gopurs.js --main Test.Main || exit 1
+echo "=== Generating PHP code with phpurs ==="
+node ../phpurs/bin/phpurs.js --main Test.Main || exit 1
 
-echo "=== Compiling and running Go test binary ==="
+echo "=== Running PHP test script ==="
 if [ -d "output/Test.Main" ]; then
-    cd output
-    rm -f go.mod
-    go mod init gopurs/output > /dev/null 2>&1
-    go mod tidy > /dev/null 2>&1
-    go build -o go_test_app ./Test.Main/main
-    cd ..
-    
-    GOGC=1000 ./output/go_test_app
+    cat << 'EOF' > scratch_test.php
+<?php
+require_once "output/Test.Main/main.mod.php";
+EOF
+    php scratch_test.php
 else
     echo "No output/Test.Main/main found."
     exit 1
