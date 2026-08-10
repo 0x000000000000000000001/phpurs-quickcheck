@@ -690,149 +690,149 @@
     },
     "extra_packages": {
       "aff": {
-        "path": "../gopurs-aff"
+        "path": "../phpurs-aff"
       },
       "argonaut-core": {
-        "path": "../gopurs-argonaut-core"
+        "path": "../phpurs-argonaut-core"
       },
       "arrays": {
-        "path": "../gopurs-arrays"
+        "path": "../phpurs-arrays"
       },
       "assert": {
-        "path": "../gopurs-assert"
+        "path": "../phpurs-assert"
       },
       "avar": {
-        "path": "../gopurs-avar"
+        "path": "../phpurs-avar"
       },
       "catenable-lists": {
-        "path": "../gopurs-catenable-lists"
+        "path": "../phpurs-catenable-lists"
       },
       "console": {
-        "path": "../gopurs-console"
+        "path": "../phpurs-console"
       },
       "datetime": {
-        "path": "../gopurs-datetime"
+        "path": "../phpurs-datetime"
       },
       "effect": {
-        "path": "../gopurs-effect"
+        "path": "../phpurs-effect"
       },
       "enums": {
-        "path": "../gopurs-enums"
+        "path": "../phpurs-enums"
       },
       "exceptions": {
-        "path": "../gopurs-exceptions"
+        "path": "../phpurs-exceptions"
       },
       "foldable-traversable": {
-        "path": "../gopurs-foldable-traversable"
+        "path": "../phpurs-foldable-traversable"
       },
       "foreign": {
-        "path": "../gopurs-foreign"
+        "path": "../phpurs-foreign"
       },
       "foreign-object": {
-        "path": "../gopurs-foreign-object"
+        "path": "../phpurs-foreign-object"
       },
       "functions": {
-        "path": "../gopurs-functions"
+        "path": "../phpurs-functions"
       },
       "integers": {
-        "path": "../gopurs-integers"
+        "path": "../phpurs-integers"
       },
       "js-promise": {
-        "path": "../gopurs-js-promise"
+        "path": "../phpurs-js-promise"
       },
       "js-promise-aff": {
-        "path": "../gopurs-js-promise-aff"
+        "path": "../phpurs-js-promise-aff"
       },
       "js-uri": {
-        "path": "../gopurs-js-uri"
+        "path": "../phpurs-js-uri"
       },
       "lazy": {
-        "path": "../gopurs-lazy"
+        "path": "../phpurs-lazy"
       },
       "node-event-emitter": {
-        "path": "../gopurs-node-event-emitter"
+        "path": "../phpurs-node-event-emitter"
       },
       "node-fs": {
-        "path": "../gopurs-node-fs"
+        "path": "../phpurs-node-fs"
       },
       "node-http": {
-        "path": "../gopurs-node-http"
+        "path": "../phpurs-node-http"
       },
       "node-net": {
-        "path": "../gopurs-node-net"
+        "path": "../phpurs-node-net"
       },
       "node-path": {
-        "path": "../gopurs-node-path"
+        "path": "../phpurs-node-path"
       },
       "node-process": {
-        "path": "../gopurs-node-process"
+        "path": "../phpurs-node-process"
       },
       "node-streams": {
-        "path": "../gopurs-node-streams"
+        "path": "../phpurs-node-streams"
       },
       "now": {
-        "path": "../gopurs-now"
+        "path": "../phpurs-now"
       },
       "nullable": {
-        "path": "../gopurs-nullable"
+        "path": "../phpurs-nullable"
       },
       "numbers": {
-        "path": "../gopurs-numbers"
+        "path": "../phpurs-numbers"
       },
       "partial": {
-        "path": "../gopurs-partial"
+        "path": "../phpurs-partial"
       },
       "prelude": {
-        "path": "../gopurs-prelude"
+        "path": "../phpurs-prelude"
       },
       "random": {
-        "path": "../gopurs-random"
+        "path": "../phpurs-random"
       },
       "record": {
-        "path": "../gopurs-record"
+        "path": "../phpurs-record"
       },
       "refs": {
-        "path": "../gopurs-refs"
+        "path": "../phpurs-refs"
       },
       "run": {
-        "path": "../gopurs-run"
+        "path": "../phpurs-run"
       },
       "simple-json": {
-        "path": "../gopurs-simple-json"
+        "path": "../phpurs-simple-json"
       },
       "spec": {
-        "path": "../gopurs-spec"
+        "path": "../phpurs-spec"
       },
       "st": {
-        "path": "../gopurs-st"
+        "path": "../phpurs-st"
       },
       "strings": {
-        "path": "../gopurs-strings"
+        "path": "../phpurs-strings"
       },
       "test": {
-        "path": "../gopurs-test"
+        "path": "../phpurs-test"
       },
       "unfoldable": {
-        "path": "../gopurs-unfoldable"
+        "path": "../phpurs-unfoldable"
       },
       "unsafe-coerce": {
-        "path": "../gopurs-unsafe-coerce"
+        "path": "../phpurs-unsafe-coerce"
       },
       "uuid": {
-        "path": "../gopurs-uuid"
+        "path": "../phpurs-uuid"
       },
       "variant": {
-        "path": "../gopurs-variant"
+        "path": "../phpurs-variant"
       },
       "yoga-json": {
-        "path": "../gopurs-yoga-json"
+        "path": "../phpurs-yoga-json"
       }
     }
   },
   "packages": {
     "arrays": {
       "type": "local",
-      "path": "../gopurs-arrays",
+      "path": "../phpurs-arrays",
       "dependencies": [
         "bifunctors",
         "control",
@@ -850,6 +850,15 @@
         "unsafe-coerce"
       ]
     },
+    "assert": {
+      "type": "local",
+      "path": "../phpurs-assert",
+      "dependencies": [
+        "console",
+        "effect",
+        "prelude"
+      ]
+    },
     "bifunctors": {
       "type": "registry",
       "version": "6.1.0",
@@ -864,7 +873,7 @@
     },
     "console": {
       "type": "local",
-      "path": "../gopurs-console",
+      "path": "../phpurs-console",
       "dependencies": [
         "effect",
         "prelude"
@@ -915,7 +924,7 @@
     },
     "effect": {
       "type": "local",
-      "path": "../gopurs-effect",
+      "path": "../phpurs-effect",
       "dependencies": [
         "prelude"
       ]
@@ -933,7 +942,7 @@
     },
     "enums": {
       "type": "local",
-      "path": "../gopurs-enums",
+      "path": "../phpurs-enums",
       "dependencies": [
         "control",
         "either",
@@ -949,7 +958,7 @@
     },
     "exceptions": {
       "type": "local",
-      "path": "../gopurs-exceptions",
+      "path": "../phpurs-exceptions",
       "dependencies": [
         "effect",
         "either",
@@ -967,7 +976,7 @@
     },
     "foldable-traversable": {
       "type": "local",
-      "path": "../gopurs-foldable-traversable",
+      "path": "../phpurs-foldable-traversable",
       "dependencies": [
         "bifunctors",
         "const",
@@ -984,7 +993,7 @@
     },
     "functions": {
       "type": "local",
-      "path": "../gopurs-functions",
+      "path": "../phpurs-functions",
       "dependencies": [
         "prelude"
       ]
@@ -1039,7 +1048,7 @@
     },
     "integers": {
       "type": "local",
-      "path": "../gopurs-integers",
+      "path": "../phpurs-integers",
       "dependencies": [
         "maybe",
         "numbers",
@@ -1057,7 +1066,7 @@
     },
     "lazy": {
       "type": "local",
-      "path": "../gopurs-lazy",
+      "path": "../phpurs-lazy",
       "dependencies": [
         "control",
         "foldable-traversable",
@@ -1132,7 +1141,7 @@
     },
     "numbers": {
       "type": "local",
-      "path": "../gopurs-numbers",
+      "path": "../phpurs-numbers",
       "dependencies": [
         "functions",
         "maybe"
@@ -1149,12 +1158,12 @@
     },
     "partial": {
       "type": "local",
-      "path": "../gopurs-partial",
+      "path": "../phpurs-partial",
       "dependencies": []
     },
     "prelude": {
       "type": "local",
-      "path": "../gopurs-prelude",
+      "path": "../phpurs-prelude",
       "dependencies": []
     },
     "profunctor": {
@@ -1174,18 +1183,15 @@
     },
     "random": {
       "type": "local",
-      "path": "../gopurs-random",
+      "path": "../phpurs-random",
       "dependencies": [
         "effect",
-        "integers",
-        "maybe",
-        "numbers",
-        "prelude"
+        "integers"
       ]
     },
     "record": {
       "type": "local",
-      "path": "../gopurs-record",
+      "path": "../phpurs-record",
       "dependencies": [
         "functions",
         "prelude",
@@ -1194,7 +1200,7 @@
     },
     "refs": {
       "type": "local",
-      "path": "../gopurs-refs",
+      "path": "../phpurs-refs",
       "dependencies": [
         "effect",
         "prelude"
@@ -1210,7 +1216,7 @@
     },
     "st": {
       "type": "local",
-      "path": "../gopurs-st",
+      "path": "../phpurs-st",
       "dependencies": [
         "partial",
         "prelude",
@@ -1220,7 +1226,7 @@
     },
     "strings": {
       "type": "local",
-      "path": "../gopurs-strings",
+      "path": "../phpurs-strings",
       "dependencies": [
         "arrays",
         "control",
@@ -1295,7 +1301,7 @@
     },
     "unfoldable": {
       "type": "local",
-      "path": "../gopurs-unfoldable",
+      "path": "../phpurs-unfoldable",
       "dependencies": [
         "foldable-traversable",
         "maybe",
@@ -1306,7 +1312,7 @@
     },
     "unsafe-coerce": {
       "type": "local",
-      "path": "../gopurs-unsafe-coerce",
+      "path": "../phpurs-unsafe-coerce",
       "dependencies": []
     }
   }
