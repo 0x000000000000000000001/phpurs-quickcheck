@@ -1,5 +1,7 @@
 output
 output.bak
+/.purmeta/
+.DS_Store
 .spago
 .cache
 
